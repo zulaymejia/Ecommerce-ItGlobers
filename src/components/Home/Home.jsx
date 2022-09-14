@@ -1,11 +1,11 @@
 import "./Home.css"
-//import NavBarPufi from "../NavBarPufi/NavBarPufi";
+import NavBarPufiHome from "../NavBarPufi-Home/NavBarPufiHome";
 
 
 export const Home = () => {
   return (
-    <div className="home">
-        <h1>HOLIS</h1>
+    <div className="content-home">
+            <NavBarPufiHome/>
      </div>
   );
 };

@@ -1,3 +1,50 @@
-.home{
-    background-color: brown;
+.content-home{
+   background-image: url("../../images/main-imagen.jpg");
+   background-repeat: no-repeat;
+
+
+   width: 100%;
+   height: 118vh;
+}
+.logo-pufi {
+    width: 10%;
+    height: 6%;
+    margin-right: 30%;
+    border: solid 10px rgb(93, 216, 22);
+  }
+  .pufi-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    border: solid 4px rgb(44, 16, 168);
+    margin-left: 20px ;
+    }
+.nav-menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 35%;
+    border: solid 4px red;
+    margin: 0%;
+    padding: 0%;
+}
+.nav-menu-one{
+    border: solid 10px rgb(240, 219, 29);
+    display: flex;
+    justify-content:right;
+    list-style-type: none;
+}
+.menu-item{
+    border: solid 5px rgb(255, 26, 140);
+}
+.nav-menu-link{
+border:solid 5px rgb(22, 34, 209);
+margin-left: 12px ;
+list-style-type: none;
+}
+.nav-menu-link-one{
+    border: solid 5px rgb(221, 116, 18);
+    margin-right: 15px;
+   
 }
