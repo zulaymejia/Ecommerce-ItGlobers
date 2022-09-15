@@ -4,7 +4,7 @@ import logoPuff from "../../images/LogoNew.png"
 import parasol from "../../images/parasol.png"
 import pillow from "../../images/pillow.png"
 import puff from "../../images/puff-.png"
-import line from "../../images/line.png"
+import line from "../../images/linegray.png"
 
 function NavBarPufiHome () {
   return (
@@ -18,7 +18,7 @@ function NavBarPufiHome () {
             </a>}
           </li>
           <li >
-            <a className="nav-menu-link-one">MI COMPRA</a>
+            <a className="nav-menu-link-one" id="compra">MI COMPRA</a>
           </li>
         </ul>
           <ul className="nav-menu">

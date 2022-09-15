@@ -1,5 +1,8 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import grid from "../../images/cuadricula1.png"
+import arrow from "../../images/arrow.png"
+
 function ContactForm() {
   const [state, handleSubmit] = useForm("xrgdpgpv");
   if (state.succeeded) {
@@ -9,18 +12,22 @@ function ContactForm() {
 <div className='container-espufi'>
 <div>
   <p className='paragraph-primary'>INSTAGRAM</p>
+  <h></h>
   <p className='paragraph-secund'>#ESPUFI</p>
+  <h></h>
+  {<img src={grid} className="grid" alt="grid"/>}
 </div>
-<div>
-  <p></p>
-  <p></p>
-  <p></p>
-</div>
+<div className='container-suscribete'>
+<p className="paragraph-primary">NEWSLETTER</p>
+      <p className='paragraph-secund'>SUSCRIBITE</p>
+      <p>y enterate de todas las novedades</p>
+      </div>
 <form onSubmit={handleSubmit}>
       <label htmlFor="email">
       </label>
-      <input
-       placeholder='email adress'
+      <div className='container-imail'>
+      <input className='text-email'
+       placeholder='Ingresa tu email'
         id="email"
         type="email"
         name="email"
@@ -35,9 +42,10 @@ function ContactForm() {
         field="message"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting}>
-        Submit
+      <button type="submit" disabled={state.submitting} className="button-email">
+      {<img src={arrow} className="arrow" alt="arrow"/>}
       </button>
+      </div>
     </form>
     </div>
   );

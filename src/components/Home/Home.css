@@ -1,3 +1,6 @@
+*{
+    margin: 0%;
+}
 .content-navBar{
    background-image: url("../../images/main-imagen.jpg");
    background-repeat: no-repeat;
@@ -9,23 +12,24 @@
     height: 6%;
     margin-right: 30%;
   }
-  .pufi-icons{
+.pufi-icons{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;
     margin-left: 30px ;
     }
-    .line{  display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
+.line{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
     }
-    .line-two {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
+.line-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
     }
 .nav-menu{
     display: flex;
@@ -41,16 +45,24 @@
     display: flex;
     justify-content:right;
     list-style-type: none;
+
 }
 .nav-menu-link{
     list-style-type: none;
-margin-left: 20px ;
-color: aliceblue;
-
+    margin-left: 20px ;
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-rain{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .nav-menu-link-one{
     margin-left:20px;
-    color: aliceblue;
+    color: rgba(255, 255, 255, 0.795);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;  
 }
 .messege{
     justify-items: center;
@@ -59,22 +71,8 @@ color: aliceblue;
     padding-top: 5px;
     color: white;
     font-size: 50px;
-
-}
-/*.button-shop{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    width: 100px;
-    height: 60px;
-    display: flex;
-    text-align: center;
-    margin: 170px auto auto auto;
-    padding-top: 5px;
-    border: solid 2px white;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.123);
-}*/
+}
 .container-img{
     width: 50%;
     height: 60%;
@@ -94,8 +92,11 @@ color: aliceblue;
 }
 .parrafo-rain{
     border: 25px rgb(233, 196, 33);
+    color: gray;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.prueba{
+.details{
     width: 1000%;
     height: 82vh;
     display: flex;
@@ -107,19 +108,17 @@ color: aliceblue;
 }
 .parasol-rain{
     width: 100px;
-  height: 100px;
+    height: 100px;
 }
-.prueba1{
+.description{
     color: gray;
-    font-size: 13px;
+    font-size: 20px;
 }
-
 .button-shop:hover {
     background-color: white;
     color: black;
     border: solid 2px transparent;
 }
-
 .button-shop{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -127,30 +126,37 @@ color: aliceblue;
     font-weight: bold;
     justify-items: center;
     text-align: center;
-    width: 75px;
+    padding: 2.5rem;
+    width: 150px;
     height: 60px;
-    border: solid 2px white;
+    border: solid 2px black;
     margin: 250px auto auto auto;
     padding-top: 15px;
-    color: white;
+    color: black;
     border-width: 3px;
-    /*border: solid 10px rgb(233, 196, 33);*/
-     background-color: rgba(255, 255, 255, 0.123);
+    background-color: rgba(255, 255, 255, 0.123);
+}
+#cuenta{
+    font-size: 15px;
+  color: rgba(255, 255, 255, 0.498);
+
+}
+#compra{
+    font-size: 15px;
+  color: rgba(255, 255, 255, 0.498);
+
 }
 /*CSS del componente PufiPuff*/
 .container-principal{
     display: flex;
-   /* border: solid 10px rgb(14, 173, 201);*/
    }
 .puff{
-  /*  border: solid 5px rgb(14, 238, 33);*/
     width: 1000%;
     height: 82vh;
     background-image: url("../../images/puff.jpg");
     background-repeat: no-repeat;    
 }
 .cluster-puff{
-    /*border: solid 5px rgb(32, 11, 109);*/
     width: 1000%;
     height: 82vh;
     display: flex;
@@ -158,15 +164,11 @@ color: aliceblue;
     justify-content: center;
     align-items: center;
     align-content: center;
-   /* border: solid 5px rgb(238, 14, 33);*/
 }
 .puff-icon{
-
-    padding: 2%;
-   /* border: solid 10px rgb(221, 116, 18);*/
-  width: 100px;
-  height: 100px;
-
+   padding: 2%;
+   width: 100px;
+   height: 100px;
 }
 .button-pufi{
     width: 25;
@@ -182,7 +184,6 @@ color: aliceblue;
 }
 /*CSS del componente PufiCart*/
 .container-imgCart{
-  /*  border: 30px rgb(14, 238, 33);*/
     background-image: url("../../images/cart1.jpg");
     background-repeat: no-repeat;
     width: 1000%;
@@ -190,9 +191,133 @@ color: aliceblue;
 }
 /*CSS del componente PufiNap */
 .pufiNap{
-   /* border: solid 5px rgb(14, 238, 33);*/
     width: 1000%;
     height: 82vh;
     background-image: url("../../images/pillow3.jpg");
     background-repeat: no-repeat;   
+}
+/*CSS del componente Espufi*/
+.container-espufi{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+}
+.paragraph-primary{
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.911);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.paragraph-secund{
+    font-size: 35px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      margin-bottom: 10px;
+  }
+.container-imail{
+  width: 570px;
+  padding: 11px;
+  border: solid 1px gray;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.text-email{
+  border: none;
+}
+.arrow{
+  width: 20px;
+  height: 20px;
+}
+.button-email{
+  border: none;
+  background: none;
+}
+.grid{
+    width: 40%;
+    height: 75vh;
+}
+/*CSS del componente Footer*/
+#container-footer{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: rgb(101, 71, 71);
+    font-weight: bold;
+}
+#container-puffi{
+    margin: auto 250px auto 5px;
+}
+.sections-puffi{
+    height: 50%;
+}
+.contacts-puffi{
+  margin-left: 160px;
+}
+.purchase{
+  margin-left: 160px;
+}
+.follow-us{
+  display: flex;
+  margin-left: 50px;
+}
+.networks-paragraph{
+    margin-left: 5px;
+}
+.social-networks{
+ width: 20%;
+ height: 20px;
+ margin: 5px;
+}
+#line-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 100px;
+    color: gray;
+    margin-left: 50px;
+}
+#line-footer-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 100px;
+    color: gray;
+    margin-left: 50px;
+}
+#line-footer-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 100px;
+    color: rgb(179, 25, 25);
+    margin-left: 50px;
+}
+.logo-black-puffi{
+    width: 150px;
+    height: 150px;
+}
+#linea-main{
+    margin-bottom: 50px;
+}
+#text{
+    color: rgba(128, 128, 128, 0.445);
+}
+.text-paff{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.text-footer{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    margin-bottom: 10px;
+}
+.container-suscribete{
+    margin-bottom: 20px;
 }

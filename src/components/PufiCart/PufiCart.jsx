@@ -5,15 +5,15 @@ const PufiCart = () => {
       <div className="container-rain">
         <div className="container-imgCart">
         </div>
-        <div className="prueba">
-        {<img src={bags} className="parasol-rain" alt="parasol" />}
-          <h3>Pufi CART</h3>
+        <div className="details">
+        {<img src={bags} className="parasol-rain" alt="parasol"/>}
+          <h3 className="text-paff">Pufi CART</h3>
           <hr className="linea-rain" />
-          <p className="prueba1">
-            Descripción del producto. Este es <br />
+          <p className="description">
+            Descripción del producto. Este es <br/>
             un texto simulado
           </p>
-          <p className="parrafo-rain"> VER MAS </p>
+          <p className="parrafo-rain" > &gt; VER MÁS </p>
         </div>
       </div>
     );
